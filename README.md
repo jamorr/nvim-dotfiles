@@ -1,4 +1,11 @@
 # 💤 LazyVim
 
-A starter template for [LazyVim](https://github.com/LazyVim/LazyVim).
-Refer to the [documentation](https://lazyvim.github.io/installation) to get started.
+My attempt at configuring LazyVim for
+-python
+-C
+-rust
+-PHP
+-JS
+-HTML
+-CSS
+-TailwindCSS
