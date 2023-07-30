@@ -44,9 +44,11 @@ return {
         "unocss-language-server",
         "php-debug-adapter",
         -- "phpactor",
+        "pyright",
         "psalm",
         "phpcbf",
-        "pint"
+        "pint",
+        "nimlangserver"
       },
     },
   },
