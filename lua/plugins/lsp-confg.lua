@@ -36,7 +36,11 @@ return {
       enabled = false,
     },
     -- add any global capabilities here
-    capabilities = {},
+    capabilities = {
+      completion = {
+        callSnippet = "Replace",
+      }
+    },
     -- Automatically format on save
     autoformat = true,
     -- Enable this to show formatters used in a notification
@@ -52,22 +56,18 @@ return {
     -- LSP Server Settings
     ---@type lspconfig.options
     servers = {
-      -- nullls = {},
-      -- rufflsp = {},
+      nim_langserver = {
+        settings = {
+          nimsuggestPath = "~/.nimble/bin/nimsuggest",
+          autoRestart = true
+        }
+      },
+      -- nimls = {},
+
       clangd = {},
       psalm = {},
-      -- phpactor = {
-      --
-      --   completion = { callSnippet = "Replace" },
-      --   diagnostics = {
-      --     virtual_text = false,
-      --     DiagnosticSign = false
-      --   }
-      -- },
       pyright = {
-        completion = {
-          callSnippet = "Replace",
-        }
+
       },
       html = {
         filetypes = { "php", "html" },
@@ -80,6 +80,12 @@ return {
         filetypes = { "css", "scss" },
         completion = {
           callSnippet = "Replace",
+        }
+      },
+
+      ruff_lsp = {
+        settings = {
+
         }
       },
       rome = {

@@ -26,6 +26,7 @@ require("lazy").setup({
         })
       end,
     },
+    { "alaviss/nim.nvim" },
     -- import any extras modules here
     -- { import = "lazyvim.plugins.extras.coding.copilot" },
     { import = "lazyvim.plugins.extras.lang.typescript" },
